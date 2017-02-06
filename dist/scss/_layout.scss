@@ -121,13 +121,6 @@ a.button {
 .pad-r {
 	padding-left: 11%;
 }
-.bg-blue {
-	background: $bgBlue;
-	overflow: hidden;
-}
-.bg-white {
-	background: $bgWhite;
-}
 .text-block {
 	border-top: 6px solid #90bed5;
 	border-radius: 2px;
@@ -143,6 +136,13 @@ a.btn {
 	padding: 14px 20px;
 	display: inline-block;
 	text-align: center;
+}
+a.btn:hover {
+	border-color: #ef6223;
+	color: #ef6223;
+}
+a.btn-orange:hover {
+	background: rgba(81,90,96,0.35);
 }
 h4, h5 {
 	font-family: $SemiboldFontFamily;

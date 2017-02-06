@@ -175,6 +175,15 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   vertical-align: middle;
 }
 
+.bg-blue {
+  background: #30436b;
+  overflow: hidden;
+}
+
+.bg-white {
+  background: #fff;
+}
+
 .admin-ic {
   background-image: url(../img/sprite.png);
   background-position: -74px -101px;
@@ -399,15 +408,6 @@ a.button {
   padding-left: 11%;
 }
 
-.bg-blue {
-  background: #30436b;
-  overflow: hidden;
-}
-
-.bg-white {
-  background: #fff;
-}
-
 .text-block {
   border-top: 6px solid #90bed5;
   -webkit-border-radius: 2px;
@@ -426,6 +426,15 @@ a.btn {
   padding: 14px 20px;
   display: inline-block;
   text-align: center;
+}
+
+a.btn:hover {
+  border-color: #ef6223;
+  color: #ef6223;
+}
+
+a.btn-orange:hover {
+  background: rgba(81, 90, 96, 0.35);
 }
 
 h4, h5 {
