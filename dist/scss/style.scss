@@ -1,0 +1,281 @@
+@import "custom-variables";
+@import "fonts";
+@import "reset";
+@import "default-clases";
+@import "sprite";
+@include sprites($spritesheet-sprites);
+@import "layout";
+
+.header {
+	.header-nav {
+		.holder-search {
+			.search {
+				a.button {
+					right: -34px;
+  				top: -15px;		
+				}
+				input[name="search"] {
+				  top: -27px;
+				  right: -50px;
+				}
+			}
+		}
+	}
+}
+.inner {
+	@extend %vertical-align;  
+	height: calc( 100vh - 80px );
+	background: url("../img/inner-bg.jpg") no-repeat top center;
+	background-size: cover;
+	text-align: center;
+	.inner-block {
+		& {
+			color: #fff;
+		}
+		& > span {
+			font-size: 28px;
+			padding-bottom: 40px;
+			display: inline-block;
+			font-family: 'ProximaNova-Light';
+		}	
+		h1 {
+			font-size: 72px;
+			padding-bottom: 29px;
+			font-family: 'ProximaNova-Bold';
+		}
+		.inner-form {
+			background-color: rgba(0,0,0,.45);
+			padding: 25px 35px 43px 37px;
+			.first-form {
+				input.form-control {
+					width: 325px;
+					height: 57px;
+				}
+				.form-btn {
+				  height: 57px;
+				}	
+			}
+			.more-option {
+				display: block;
+				cursor: pointer;
+				text-align: left;
+				float: left;
+   			margin: 9px 0 0 4px;
+				font-size: 14px;
+				font-family: 'ProximaNova-Regular';
+			}
+			.second-form {
+				height: 100px;
+				display: none;
+				.holder-input {
+					display: inline-block;
+					margin: 16px 61px 0 0;
+					.fl-block {
+						float: left;
+						padding-left: 4px;
+						& p {
+							font-size: 16px;
+							font-family: 'ProximaNova-Semibold';
+							text-align: left;
+							padding-bottom: 7px; 
+						}
+						input[type="text"]{
+							width: 240px;
+    					height: 49px;
+						}
+					}
+				}
+				.input-group {
+					.checkbox-holder {
+						float: left;
+						margin: 14px 0 0 5px;
+						input[type="checkbox"] + label {
+							font-family: 'ProximaNova-Regular';
+						  font-size: 16px;
+						  padding-right: 46px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.find-solicitors {
+	text-align: center;
+	padding: 28px 0 30px 0;
+	p {
+		font-size: 18px;
+		font-family: $regularFontFamily;
+		& > a {
+			color: #f26523;
+		}
+	}
+}
+.bg-grey {
+	background: $bgGrey;
+	border-bottom: 1px solid #e4ebec;
+}
+.areas {
+	margin: 59px 0 17px 0;
+	.coll {
+		h3 {
+			font-family: 'ProximaNova-Semibold';
+			font-size: 20px;
+			color: #ef6223;
+			padding: 6px 0 5px 0;
+			&	span {
+				font-size: 12px;
+			}
+		}
+		p {
+			width: 71%;
+			font-family: $regularFontFamily;
+			font-size: 16px;
+			color: #6c767e;
+			line-height: 20px;
+		}
+	}
+	.pad-r {
+		p {
+			width: 100%;
+		}
+	}
+	.more-areas {
+		h4 {
+			margin-top: 40px;
+		}	
+	}
+}
+.help {
+	text-align: center;
+	h4 {
+		color: #fff;
+		padding: 60px 0 46px 0;
+
+	}
+	& h5 {
+		font-size: 20px;
+		padding: 19px 0 10px 0;
+	}
+	& p {
+		color: #6c767e;
+		font-size: 16px;
+		text-align: left;
+		line-height: 20px;
+		padding: 0 7%;
+		& a {
+			color: #30436b;
+			font-family: $regularFontFamily;
+		}
+	}
+	.button-holder {
+		margin-bottom: 78px;
+		a.btn {
+		margin-right: 24px;
+		}
+	}
+}
+.top-counties {
+	text-align: center;
+	margin: 52px 0 74px 0;
+	h4 {
+		font-size: 38px;
+		padding-bottom: 72px;
+	}
+	a.btn {
+		color: #ef6223;
+		border-color: #ef6223;
+		margin: 0 19px 25px 0;
+	}
+	.find-solicitor {
+		margin: 51px 0 0 0;
+		width: 100%;
+		overflow: hidden;
+		.find-hold {
+			width: 50%;
+			text-align: left;
+			float: left;
+			padding: 20px 0 13px 26px;
+			p {
+				font-size: 30px;
+				font-family: $SemiboldFontFamily;
+				color: #fff;
+				display: inline-block;
+				vertical-align: middle;
+				& span {
+					vertical-align: middle;
+					margin-right: 25px;
+				}
+			}
+		}
+		.country {
+	    width: 16.66%;
+	    float: left;
+	    padding: 30px 0;
+	    p {
+	    	color: #fff;
+	    	font-family: $SemiboldFontFamily;
+	    	font-size: 24px;
+	    	padding-bottom: 5px;
+	    }
+	    span {
+	    	color: #a54619;
+	    	font-size: 14px;
+	    }
+		}	
+	}
+}
+.you-solicitor {
+	.sign-block {
+		float: left;
+		padding: 43px 0;
+		width: 50%;
+    text-align: right;
+		h5 {
+			font-family: $SemiboldFontFamily;
+			font-size: 32px;
+			color: #fff;
+			padding-bottom: 11px;
+			text-align: left; 
+		}
+		p {
+			font-family: $regularFontFamily;
+			font-size: 16px;
+			color: #dde3ee;
+			text-align: left;
+		}
+		a.btn {
+		margin: 24px 0 0 44px;
+    width: 190px;
+		}
+	}
+}
+.footer	{
+ 	text-align: center;
+	.holder-nav {
+ 		.footer-nav {				
+			float: right;
+    	margin: 42px 0 34px 0;
+			width: 100%;
+			li {
+				display: inline-block;
+				margin-right: 19px;
+				a {
+					color: #515a60;
+					font-size: 12px;
+					&:hover {
+						color: $generlOrange;
+					}
+				}
+			}
+		}
+		.owner {
+			padding: 28px 0 10px 0;
+			span {
+				color: #7d858b;
+				font-family: $regularFontFamily;
+				font-size: 14px;
+			}
+		}
+ 	}
+}
