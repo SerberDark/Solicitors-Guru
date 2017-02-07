@@ -35,7 +35,7 @@
   color: #7e878d;
   padding: 0 16px;
   margin-left: 4px;
-  font-family: 'ProximaNova-Regular';
+  font-family: $regularFontFamily;
 }
 .form-btn {
 	background: #f26523;
@@ -44,7 +44,7 @@
   border-radius: 3px;
   margin-left: 2px;
   font-size: 16px;
-  font-family: 'ProximaNova-Semibold';
+  font-family: $SemiboldFontFamily;
 }
 .icon {
 	display: inline-block;
@@ -90,7 +90,7 @@ input[name="search"] {
   background-color: #fff;
   position: absolute;
   z-index: 1;
-  font-family: 'ProximaNova-Regular';
+  font-family: $regularFontFamily;
 }
 input[name="search"]:focus {
 	border: 2px solid rgba(0, 0, 0, 0.45);
@@ -123,17 +123,17 @@ input[name="search"]:focus {
 	font-size: 16px;
 	color: #fff;
 	border: 1px solid #fff;
-	border-radius: 1px;
+	border-radius: 2px;
 	padding: 14px 20px;
 	display: inline-block;
 	text-align: center;
 }
 .btn:hover {
-	border-color: #ef6223;
+	border-color: $bgOrange;
 	color: #ef6223;
 }
 .btn-orange {
-	color: #ef6223;
+	color: $bgOrange;
 	border-color: #ef6223;
 }
 .btn-orange:hover {

@@ -19,4 +19,15 @@ $(function() {
   $('select').styler();
 
 });
+
+// add slick
+$('.areas-slick-js').slick({
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+
+
+});
 })(jQuery);
+
