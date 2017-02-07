@@ -237,7 +237,7 @@
 	position: relative;
 }
 .jq-selectbox__select {
-	height: 49px;
+	height: 57px;
 	line-height: 49px;
 	padding: 0 45px 0 16px;
 	border: 1px solid #CCC;
@@ -275,7 +275,7 @@
 	width: 100%;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-  line-height: 49px;
+  line-height: 57px;
   text-align: left;
   font-size: 16px;
   color: #7e878d;
@@ -297,7 +297,7 @@
 	width: 11px;
 	height: 24px;
   position: absolute;
-  top: 12px;
+  top: 16px;
   right: 14px;
 }
 .jq-selectbox:hover .jq-selectbox__trigger-arrow {

@@ -28,7 +28,7 @@
 		}
 	}
 }
-input[type="text"] {
+.form-control {
 	width: $formInputWidth;
 	border-radius: 2px;
 	font-size: 16px;
@@ -45,9 +45,6 @@ input[type="text"] {
   margin-left: 2px;
   font-size: 16px;
   font-family: 'ProximaNova-Semibold';
-}
-.clr-botch {
-	clear: both;
 }
 .icon {
 	display: inline-block;
@@ -100,12 +97,13 @@ input[name="search"]:focus {
   width: 310px;
   transition: .9s cubic-bezier(0, 0.8, 0, 1);
 }
-a.button {
+.button {
   background-color: transparent;
   position: absolute;
   z-index: 9;
 }
 .row {
+	overflow: hidden;
 	clear: both;
 	margin: 0 -15px; 
 }
@@ -115,19 +113,12 @@ a.button {
   margin-bottom: 35px;
   padding: 0 15px;
 }
-.pad-c {
-	padding-left: 4%;
-}
-.pad-r {
-	padding-left: 11%;
-}
 .text-block {
 	border-top: 6px solid #90bed5;
 	border-radius: 2px;
 	padding-bottom: 21px;
-	margin-bottom: 24px;
 }
-a.btn {
+.btn {
 	font-family: $SemiboldFontFamily;
 	font-size: 16px;
 	color: #fff;
@@ -137,11 +128,15 @@ a.btn {
 	display: inline-block;
 	text-align: center;
 }
-a.btn:hover {
+.btn:hover {
 	border-color: #ef6223;
 	color: #ef6223;
 }
-a.btn-orange:hover {
+.btn-orange {
+	color: #ef6223;
+	border-color: #ef6223;
+}
+.btn-orange:hover {
 	background: rgba(81,90,96,0.35);
 }
 h4, h5 {
@@ -150,10 +145,4 @@ h4, h5 {
 }
 h4 {
 	font-size: 24px;
-}
-.bg-orange {
-	background: $bgOrange;
-}
-.br-l {
-	border-left: 1px solid #da5a1f;
 }

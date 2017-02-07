@@ -184,6 +184,26 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   background: #fff;
 }
 
+.clr-botch {
+  clear: both;
+}
+
+.pad-c {
+  padding-left: 4%;
+}
+
+.pad-r {
+  padding-left: 11%;
+}
+
+.bg-orange {
+  background: #f26523;
+}
+
+.br-l {
+  border-left: 1px solid #da5a1f;
+}
+
 .admin-ic {
   background-image: url(../img/sprite.png);
   background-position: -74px -101px;
@@ -296,7 +316,7 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   color: #f26523;
 }
 
-input[type="text"] {
+.form-control {
   width: 100%;
   -webkit-border-radius: 2px;
           border-radius: 2px;
@@ -316,10 +336,6 @@ input[type="text"] {
   margin-left: 2px;
   font-size: 16px;
   font-family: 'ProximaNova-Semibold';
-}
-
-.clr-botch {
-  clear: both;
 }
 
 .icon {
@@ -382,13 +398,14 @@ input[name="search"]:focus {
   transition: 0.9s cubic-bezier(0, 0.8, 0, 1);
 }
 
-a.button {
+.button {
   background-color: transparent;
   position: absolute;
   z-index: 9;
 }
 
 .row {
+  overflow: hidden;
   clear: both;
   margin: 0 -15px;
 }
@@ -400,23 +417,14 @@ a.button {
   padding: 0 15px;
 }
 
-.pad-c {
-  padding-left: 4%;
-}
-
-.pad-r {
-  padding-left: 11%;
-}
-
 .text-block {
   border-top: 6px solid #90bed5;
   -webkit-border-radius: 2px;
           border-radius: 2px;
   padding-bottom: 21px;
-  margin-bottom: 24px;
 }
 
-a.btn {
+.btn {
   font-family: "ProximaNova-Semibold";
   font-size: 16px;
   color: #fff;
@@ -428,12 +436,17 @@ a.btn {
   text-align: center;
 }
 
-a.btn:hover {
+.btn:hover {
   border-color: #ef6223;
   color: #ef6223;
 }
 
-a.btn-orange:hover {
+.btn-orange {
+  color: #ef6223;
+  border-color: #ef6223;
+}
+
+.btn-orange:hover {
   background: rgba(81, 90, 96, 0.35);
 }
 
@@ -444,14 +457,6 @@ h4, h5 {
 
 h4 {
   font-size: 24px;
-}
-
-.bg-orange {
-  background: #f26523;
-}
-
-.br-l {
-  border-left: 1px solid #da5a1f;
 }
 
 .header .header-nav .holder-search .search a.button {
@@ -535,9 +540,9 @@ h4 {
   padding-bottom: 7px;
 }
 
-.inner .inner-block .inner-form .second-form .holder-input .fl-block input[type="text"] {
+.inner .inner-block .inner-form .second-form .holder-input .fl-block .form-control {
   width: 240px;
-  height: 49px;
+  height: 57px;
 }
 
 .inner .inner-block .inner-form .second-form .input-group .checkbox-holder {
@@ -632,8 +637,16 @@ h4 {
   margin-bottom: 78px;
 }
 
-.help .button-holder a.btn {
-  margin-right: 24px;
+.help .button-holder .btn + .btn {
+  margin-left: 24px;
+}
+
+.help .categories {
+  margin-top: 24px;
+}
+
+.help .categories h4 {
+  padding: 0 0 44px 0;
 }
 
 .top-counties {
@@ -647,8 +660,6 @@ h4 {
 }
 
 .top-counties a.btn {
-  color: #ef6223;
-  border-color: #ef6223;
   margin: 0 19px 25px 0;
 }
 
@@ -678,20 +689,25 @@ h4 {
   margin-right: 25px;
 }
 
-.top-counties .find-solicitor .country {
-  width: 16.66%;
+.top-counties .find-solicitor .contry-holder {
+  width: 50%;
+  float: left;
+}
+
+.top-counties .find-solicitor .contry-holder .country {
+  width: 33.333333%;
   float: left;
   padding: 30px 0;
 }
 
-.top-counties .find-solicitor .country p {
+.top-counties .find-solicitor .contry-holder .country p {
   color: #fff;
   font-family: "ProximaNova-Semibold";
   font-size: 24px;
   padding-bottom: 5px;
 }
 
-.top-counties .find-solicitor .country span {
+.top-counties .find-solicitor .contry-holder .country span {
   color: #a54619;
   font-size: 14px;
 }
@@ -718,9 +734,13 @@ h4 {
   text-align: left;
 }
 
-.you-solicitor .sign-block a.btn {
-  margin: 24px 0 0 44px;
+.you-solicitor .sign-block .btn {
+  margin-top: 27px;
   width: 190px;
+}
+
+.you-solicitor .sign-block .btn + .btn {
+  margin-left: 44px;
 }
 
 .footer {

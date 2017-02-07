@@ -79,9 +79,9 @@
 							text-align: left;
 							padding-bottom: 7px; 
 						}
-						input[type="text"]{
+						.form-control {
 							width: 240px;
-    					height: 49px;
+    					height: 57px;
 						}
 					}
 				}
@@ -170,8 +170,14 @@
 	}
 	.button-holder {
 		margin-bottom: 78px;
-		a.btn {
-		margin-right: 24px;
+	}
+	.button-holder .btn + .btn {
+		margin-left: 24px;
+	}
+	.categories {
+		margin-top: 24px;
+		h4 {
+		padding: 0 0 44px 0;
 		}
 	}
 }
@@ -183,8 +189,6 @@
 		padding-bottom: 72px;
 	}
 	a.btn {
-		color: #ef6223;
-		border-color: #ef6223;
 		margin: 0 19px 25px 0;
 	}
 	.find-solicitor {
@@ -208,21 +212,25 @@
 				}
 			}
 		}
-		.country {
-	    width: 16.66%;
-	    float: left;
-	    padding: 30px 0;
-	    p {
-	    	color: #fff;
-	    	font-family: $SemiboldFontFamily;
-	    	font-size: 24px;
-	    	padding-bottom: 5px;
-	    }
-	    span {
-	    	color: #a54619;
-	    	font-size: 14px;
-	    }
-		}	
+		.contry-holder {
+			width: 50%;
+			float: left;
+			.country {
+		    width: 33.333333%;
+		    float: left;
+		    padding: 30px 0;
+		    p {
+		    	color: #fff;
+		    	font-family: $SemiboldFontFamily;
+		    	font-size: 24px;
+		    	padding-bottom: 5px;
+		    }
+		    span {
+		    	color: #a54619;
+		    	font-size: 14px;
+		    }
+			}
+		}		
 	}
 }
 .you-solicitor {
@@ -244,10 +252,15 @@
 			color: #dde3ee;
 			text-align: left;
 		}
-		a.btn {
-		margin: 24px 0 0 44px;
-    width: 190px;
-		}
+	}
+	.sign-block {
+		.btn {
+			margin-top: 27px;
+			width: 190px;
+		}	
+	}
+	.sign-block .btn + .btn {
+		margin-left: 44px; 
 	}
 }
 .footer	{
