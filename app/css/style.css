@@ -287,6 +287,18 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   margin: 0 auto;
 }
 
+@media (max-width: 1099px) {
+  .container {
+    width: 980px;
+  }
+}
+
+@media (max-width: 996px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .header {
   height: 80px;
   width: 100%;
@@ -296,6 +308,20 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
 .header .logo {
   float: left;
   margin: 13px 0 0 30px;
+}
+
+@media (max-width: 500px) {
+  .header .logo {
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .header .logo a img {
+    width: 100px;
+  }
 }
 
 .header .header-nav {
@@ -325,6 +351,12 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   padding: 0 16px;
   margin-left: 4px;
   font-family: "ProximaNova-Regular";
+}
+
+@media (max-width: 959px) {
+  .form-control {
+    margin-left: 0;
+  }
 }
 
 .form-btn {
@@ -391,11 +423,24 @@ input[name="search"] {
   font-family: "ProximaNova-Regular";
 }
 
+@media (max-width: 500px) {
+  input[name="search"] {
+    width: 195px;
+    height: 30px;
+  }
+}
+
 input[name="search"]:focus {
   border: 2px solid rgba(0, 0, 0, 0.45);
   width: 310px;
   -webkit-transition: 0.9s cubic-bezier(0, 0.8, 0, 1);
   transition: 0.9s cubic-bezier(0, 0.8, 0, 1);
+}
+
+@media (max-width: 500px) {
+  input[name="search"]:focus {
+    width: 200px;
+  }
 }
 
 .button {
@@ -407,14 +452,20 @@ input[name="search"]:focus {
 .row {
   overflow: hidden;
   clear: both;
-  margin: 0 -15px;
+  margin: 0 -10px;
 }
 
 .coll {
   width: 33.3333%;
   float: left;
   margin-bottom: 35px;
-  padding: 0 15px;
+  padding: 0 10px;
+}
+
+@media (max-width: 640px) {
+  .coll {
+    width: 100%;
+  }
 }
 
 .text-block {
@@ -580,6 +631,30 @@ h4 {
           transform: translateY(-50%) rotate(-135deg);
 }
 
+@media (max-width: 1195px) {
+  .slick-arrow.slick-prev {
+    left: -16px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .slick-arrow.slick-prev {
+    left: 25px;
+  }
+}
+
+@media (max-width: 959px) {
+  .slick-arrow.slick-prev {
+    left: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .slick-arrow.slick-prev {
+    left: 0;
+  }
+}
+
 .slick-arrow.slick-next {
   right: -60px;
   -webkit-transform: translateY(-50%) rotate(45deg);
@@ -587,7 +662,31 @@ h4 {
           transform: translateY(-50%) rotate(45deg);
 }
 
-.header .header-nav .holder-search .search a.button {
+@media (max-width: 1195px) {
+  .slick-arrow.slick-next {
+    right: -11px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .slick-arrow.slick-next {
+    right: 40px;
+  }
+}
+
+@media (max-width: 959px) {
+  .slick-arrow.slick-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .slick-arrow.slick-next {
+    right: 0;
+  }
+}
+
+.header .header-nav .holder-search .search .button {
   right: -34px;
   top: -15px;
 }
@@ -597,12 +696,39 @@ h4 {
   right: -50px;
 }
 
+@media (max-width: 500px) {
+  .header .header-nav .holder-search .search input[name="search"] {
+    top: -20px;
+  }
+}
+
+@media (max-width: 959px) {
+  .header .header-nav {
+    margin: 24px 35px 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .header .header-nav {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .inner {
   height: -webkit-calc( 100vh - 80px);
   height: calc( 100vh - 80px);
   background: url("../img/inner-bg.jpg") no-repeat top center;
   background-size: cover;
   text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .inner {
+    height: auto;
+    padding: 40px 0;
+  }
 }
 
 .inner .inner-block {
@@ -627,13 +753,36 @@ h4 {
   padding: 25px 35px 43px 37px;
 }
 
-.inner .inner-block .inner-form .first-form input.form-control {
+.inner .inner-block .inner-form .first-form .form-control {
   width: 325px;
   height: 57px;
 }
 
+@media (max-width: 959px) {
+  .inner .inner-block .inner-form .first-form .form-control {
+    width: 100%;
+  }
+}
+
+.inner .inner-block .inner-form .first-form input + input {
+  margin-left: 6px;
+}
+
+@media (max-width: 959px) {
+  .inner .inner-block .inner-form .first-form input + input {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
 .inner .inner-block .inner-form .first-form .form-btn {
   height: 57px;
+}
+
+@media (max-width: 959px) {
+  .inner .inner-block .inner-form .first-form .form-btn {
+    width: 100%;
+  }
 }
 
 .inner .inner-block .inner-form .more-option {
@@ -653,7 +802,13 @@ h4 {
 
 .inner .inner-block .inner-form .second-form .holder-input {
   display: inline-block;
-  margin: 16px 61px 0 0;
+  margin: 16px 13px 0 0;
+}
+
+@media (max-width: 825px) {
+  .inner .inner-block .inner-form .second-form .holder-input {
+    text-align: center;
+  }
 }
 
 .inner .inner-block .inner-form .second-form .holder-input .fl-block {
@@ -661,27 +816,122 @@ h4 {
   padding-left: 4px;
 }
 
-.inner .inner-block .inner-form .second-form .holder-input .fl-block p {
-  font-size: 16px;
-  font-family: "ProximaNova-Semibold";
-  text-align: left;
-  padding-bottom: 7px;
-}
-
 .inner .inner-block .inner-form .second-form .holder-input .fl-block .form-control {
   width: 240px;
   height: 57px;
 }
 
+@media (max-width: 959px) {
+  .inner .inner-block .inner-form .second-form .holder-input .fl-block .form-control {
+    width: 224px;
+  }
+}
+
+@media (max-width: 825px) {
+  .inner .inner-block .inner-form .second-form .holder-input .fl-block .form-control {
+    width: 100%;
+  }
+}
+
+@media (max-width: 959px) {
+  .inner .inner-block .inner-form .second-form .holder-input {
+    margin-right: 0;
+  }
+}
+
+.inner .inner-block .inner-form .second-form .holder-input .select-block, .inner .inner-block .inner-form .second-form .holder-input .name-block, .inner .inner-block .inner-form .second-form .holder-input .id-block {
+  text-align: left;
+}
+
+@media (max-width: 825px) {
+  .inner .inner-block .inner-form .second-form .holder-input .select-block, .inner .inner-block .inner-form .second-form .holder-input .name-block, .inner .inner-block .inner-form .second-form .holder-input .id-block {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.inner .inner-block .inner-form .second-form .holder-input .select-block label, .inner .inner-block .inner-form .second-form .holder-input .name-block label, .inner .inner-block .inner-form .second-form .holder-input .id-block label {
+  float: left;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-family: "ProximaNova-Semibold";
+  padding-bottom: 7px;
+  padding-left: 4px;
+}
+
+.inner .inner-block .inner-form .second-form .holder-input .id-block {
+  margin-left: -45px;
+}
+
+@media (max-width: 825px) {
+  .inner .inner-block .inner-form .second-form .holder-input .id-block {
+    margin: 0 auto;
+  }
+}
+
+.inner .inner-block .inner-form .second-form .holder-input .select-block {
+  margin-right: -75px;
+}
+
 .inner .inner-block .inner-form .second-form .input-group .checkbox-holder {
   float: left;
   margin: 14px 0 0 5px;
+  overflow: hidden;
+}
+
+.inner .inner-block .inner-form .second-form .input-group .checkbox-holder .label-input {
+  float: left;
+}
+
+@media (max-width: 686px) {
+  .inner .inner-block .inner-form .second-form .input-group .checkbox-holder .label-input {
+    width: 50%;
+  }
+}
+
+@media (max-width: 440px) {
+  .inner .inner-block .inner-form .second-form .input-group .checkbox-holder .label-input {
+    width: 100%;
+  }
 }
 
 .inner .inner-block .inner-form .second-form .input-group .checkbox-holder input[type="checkbox"] + label {
   font-family: 'ProximaNova-Regular';
   font-size: 16px;
   padding-right: 46px;
+}
+
+@media (max-width: 959px) {
+  .inner .inner-block .inner-form .second-form .input-group .checkbox-holder input[type="checkbox"] + label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner .inner-block .inner-form .second-form .input-group .checkbox-holder input[type="checkbox"] + label {
+    padding-right: 31px;
+    font-size: 13px;
+    vertical-align: text-top;
+  }
+}
+
+@media (max-width: 686px) {
+  .inner .inner-block .inner-form .second-form .input-group .checkbox-holder input[type="checkbox"] + label {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 686px) {
+  .inner .inner-block .inner-form .second-form .input-group .checkbox-holder input[type="checkbox"] + label {
+    padding: 0;
+    float: left;
+    padding-bottom: 20px;
+    font-size: 17px;
+    vertical-align: bottom;
+    line-height: 0.7;
+  }
 }
 
 .find-solicitors {
@@ -692,6 +942,12 @@ h4 {
 .find-solicitors p {
   font-size: 18px;
   font-family: "ProximaNova-Regular";
+}
+
+@media (max-width: 959px) {
+  .find-solicitors p {
+    font-size: 14px;
+  }
 }
 
 .find-solicitors p > a {
@@ -705,6 +961,24 @@ h4 {
 
 .areas {
   margin: 59px 0 17px 0;
+}
+
+.areas .coll {
+  height: 160px;
+}
+
+@media (max-width: 959px) {
+  .areas .coll {
+    width: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .areas .coll {
+    width: 100%;
+    text-align: center;
+    height: 120px;
+  }
 }
 
 .areas .coll h3 {
@@ -724,6 +998,18 @@ h4 {
   font-size: 16px;
   color: #6c767e;
   line-height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .areas .coll p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .areas .coll p {
+    width: 100%;
+  }
 }
 
 .areas .pad-r p {
@@ -760,6 +1046,12 @@ h4 {
   padding: 60px 0 46px 0;
 }
 
+@media (max-width: 343px) {
+  .help h4 {
+    font-size: 22px;
+  }
+}
+
 .help h5 {
   font-size: 20px;
   padding: 19px 0 10px 0;
@@ -782,8 +1074,21 @@ h4 {
   margin-bottom: 78px;
 }
 
+@media (max-width: 700px) {
+  .help .button-holder .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
 .help .button-holder .btn + .btn {
   margin-left: 24px;
+}
+
+@media (max-width: 700px) {
+  .help .button-holder .btn + .btn {
+    margin-left: 0;
+  }
 }
 
 .help .categories {
@@ -808,6 +1113,12 @@ h4 {
   margin: 0 19px 25px 0;
 }
 
+@media (max-width: 640px) {
+  .top-counties a.btn {
+    width: 100%;
+  }
+}
+
 .top-counties .find-solicitor {
   margin: 51px 0 0 0;
   width: 100%;
@@ -821,12 +1132,32 @@ h4 {
   padding: 20px 0 13px 26px;
 }
 
+@media (max-width: 740px) {
+  .top-counties .find-solicitor .find-hold {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
 .top-counties .find-solicitor .find-hold p {
   font-size: 30px;
   font-family: "ProximaNova-Semibold";
   color: #fff;
   display: inline-block;
   vertical-align: middle;
+}
+
+@media (max-width: 959px) {
+  .top-counties .find-solicitor .find-hold p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .top-counties .find-solicitor .find-hold p {
+    font-size: 24px;
+  }
 }
 
 .top-counties .find-solicitor .find-hold p span {
@@ -837,6 +1168,12 @@ h4 {
 .top-counties .find-solicitor .contry-holder {
   width: 50%;
   float: left;
+}
+
+@media (max-width: 740px) {
+  .top-counties .find-solicitor .contry-holder {
+    width: 100%;
+  }
 }
 
 .top-counties .find-solicitor .contry-holder .country {
@@ -866,6 +1203,13 @@ h4 {
   text-align: right;
 }
 
+@media (max-width: 730px) {
+  .you-solicitor .sign-block {
+    width: 100%;
+    padding-bottom: 0;
+  }
+}
+
 .you-solicitor .sign-block h5 {
   font-family: "ProximaNova-Semibold";
   font-size: 32px;
@@ -881,12 +1225,39 @@ h4 {
   text-align: left;
 }
 
+@media (max-width: 730px) {
+  .you-solicitor .sign-block {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+
 .you-solicitor .sign-block .btn {
   margin-top: 27px;
 }
 
+@media (max-width: 730px) {
+  .you-solicitor .sign-block .btn {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
+
 .you-solicitor .sign-block .btn + .btn {
   margin-left: 44px;
+}
+
+@media (max-width: 959px) {
+  .you-solicitor .sign-block .btn + .btn {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 730px) {
+  .you-solicitor .sign-block .btn + .btn {
+    margin: 0 auto;
+  }
 }
 
 .footer {
@@ -904,9 +1275,21 @@ h4 {
   margin-right: 19px;
 }
 
+@media (max-width: 430px) {
+  .footer .holder-nav .footer-nav li {
+    margin-right: 4px;
+  }
+}
+
 .footer .holder-nav .footer-nav li a {
   color: #515a60;
   font-size: 12px;
+}
+
+@media (max-width: 430px) {
+  .footer .holder-nav .footer-nav li a {
+    font-size: 11px;
+  }
 }
 
 .footer .holder-nav .footer-nav li a:hover {

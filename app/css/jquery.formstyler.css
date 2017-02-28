@@ -236,6 +236,11 @@
 	width: 220px;
 	position: relative;
 }
+@media (max-width: 825px){
+	.jq-selectbox {
+		width: 100%;
+	}
+}
 .jq-selectbox__select {
 	height: 57px;
 	line-height: 49px;

@@ -4,6 +4,12 @@
  width: $desctopContainerWidth;
  padding: 0 10px;
  margin: 0 auto;
+ @media (max-width: 1099px) {
+    width: $mediumContainerWidth;
+  }
+  @media (max-width: 996px) {
+    width: 100%;
+  }
 }
 .header {
 	height: $desctopHeaderHeight;
@@ -12,6 +18,16 @@
 	.logo {
 		float: left;
 		margin: 13px 0 0 30px;
+		@media (max-width: 500px) {
+			margin: 10px auto;
+			width: 100%;
+			text-align: center;
+		}
+		& a img {
+			@media (max-width: 500px) {
+				width: 100px;
+			}
+		}
 	}
 	.header-nav {
 		float: right;
@@ -36,6 +52,9 @@
   padding: 0 16px;
   margin-left: 4px;
   font-family: $regularFontFamily;
+  @media (max-width: 959px){
+  	 margin-left: 0;
+  }
 }
 .form-btn {
 	background: #f26523;
@@ -91,11 +110,18 @@ input[name="search"] {
   position: absolute;
   z-index: 1;
   font-family: $regularFontFamily;
+	@media (max-width: 500px) {
+		width: 195px;
+		height: 30px;
+	}
 }
 input[name="search"]:focus {
 	border: 2px solid rgba(0, 0, 0, 0.45);
   width: 310px;
   transition: .9s cubic-bezier(0, 0.8, 0, 1);
+	@media (max-width: 500px) {
+		width: 200px;
+	}
 }
 .button {
   background-color: transparent;
@@ -105,13 +131,16 @@ input[name="search"]:focus {
 .row {
 	overflow: hidden;
 	clear: both;
-	margin: 0 -15px; 
+	margin: 0 -10px; 
 }
 .coll {
 	width: 33.3333%;
 	float: left;
   margin-bottom: 35px;
-  padding: 0 15px;
+  padding: 0 10px;
+	@media (max-width: 640px) {
+		width: 100%;
+	}
 }
 .text-block {
 	border-top: 6px solid #90bed5;

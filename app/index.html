@@ -20,7 +20,7 @@
 				<li><a href="#">Contact</a></li>
 				<li><div class="holder-search">
 						<form class="search">
-							<a href="#" class="button search-button serch-ic icon"></a>
+							<input type="submit" value="" class="button search-button serch-ic icon">
 						  <input class="label-search" type="text" name="search" placeholder="Search..." >
 						</form>
 					</div>
@@ -46,8 +46,8 @@
 							<div class="input-group">
 								<div class="holder-input">
 									<div class="select-block fl-block">
-										<p>Language</p>
-										<select>							
+										<label for="language-options">Language</label>
+										<select id="language-options">
 											<option>All Languages</option>
 												<option>English</option>
 												<option>Русский</option>
@@ -58,26 +58,34 @@
 										</select>
 									</div>
 									<div class="name-block fl-block">
-										<p>Name</p>
-										<input type="text" name="country" class="form-control" placeholder="e.g. Joe Bloggs">
+										<label for="country">Name</label>
+										<input type="text" name="country" class="form-control" id="country" placeholder="e.g. Joe Bloggs">
 									</div>
 									<div class="id-block fl-block">
-										<p>SRA ID</p>
-										<input type="text" name="country" class="form-control">
+										<label for="sra">SRA ID</label>
+										<input type="text" name="country" id="sra" class="form-control">
 									</div>
 								</div>	
 							</div>
 							<div class="input-group">
 								<div class="checkbox-holder">
-									<input type="checkbox" name="legal" id="legal">
-									<label for="legal">Accepts legal aid</label>
-									<input type="checkbox" name="access" id="access">
-									<label for="access">Disabled access</label>
-									<input type="checkbox" name="loops" id="loops">
-									<label for="loops">Hearing loops</label>
-									<input type="checkbox" name="language" id="language">
-									<label for="language">Sign language</label>	
-								</div>	
+									<div class="label-input">
+										<input type="checkbox" name="legal" id="legal">
+										<label for="legal">Accepts legal aid</label>
+									</div>
+									<div class="label-input">
+										<input type="checkbox" name="access" id="access">
+										<label for="access">Disabled access</label>
+									</div>
+									<div class="label-input">
+										<input type="checkbox" name="loops" id="loops">
+										<label for="loops">Hearing loops</label>
+									</div>
+									<div class="label-input">
+										<input type="checkbox" name="language" id="language">
+										<label for="language">Sign language</label>
+									</div>
+								</div>
 							</div>
 						</div>
 					</form>
@@ -92,54 +100,68 @@
 		<div class="areas">
 			<div class="container">
 				<div class="row">
-					<div class="coll">
-						<span class="home-ic icon"></span>
-						<h3>Commercial property<span class="counter"> (6298)</span></h3>
-						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
+					<div class="holder-services">
+						<div class="coll">
+							<span class="home-ic icon"></span>
+							<h3>Commercial property<span class="counter"> (6298)</span></h3>
+							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
+						</div>
 					</div>
-					<div class="coll pad-c">
-						<span class="keys-ic icon"></span>
-						<h3>Business and Commercial<span class="counter"> (4293)</span></h3>
-						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi.</p>	
+					<div class="holder-services">
+						<div class="coll pad-c">
+							<span class="keys-ic icon"></span>
+							<h3>Business and Commercial<span class="counter"> (4293)</span></h3>
+							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi.</p>
+						</div>	
 					</div>	
-					<div class="coll pad-r">
-						<span class="admin-ic icon"></span>
-						<h3>Employment<span class="counter"> (2305)</span></h3>
-						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
+					<div class="holder-services">
+						<div class="coll pad-r">
+							<span class="admin-ic icon"></span>
+							<h3>Employment<span class="counter"> (2305)</span></h3>
+							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
+						</div>	
 					</div>
-				</div>
-				<div class="row">
-					<div class="coll">
-						<span class="commers-ic icon"></span>
-						<h3>Commercial litigation<span class="counter"> (2590)</span></h3>
-						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
+					<div class="holder-services">
+						<div class="coll">
+							<span class="commers-ic icon"></span>
+							<h3>Commercial litigation<span class="counter"> (2590)</span></h3>
+							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
+						</div>
 					</div>
-					<div class="coll pad-c">
-						<span class="hands-ic icon"></span>
-						<h3>Advocacy<span class="counter"> (1774)</span></h3>
-						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi.</p>	
+					<div class="holder-services">
+						<div class="coll pad-c">
+							<span class="hands-ic icon"></span>
+							<h3>Advocacy<span class="counter"> (1774)</span></h3>
+							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi.</p>
+						</div>		
+					</div>
+					<div class="holder-services">	
+						<div class="coll pad-r">
+							<span class="apartment-ic icon"></span>
+							<h3>Banking<span class="counter"> (2190)</span></h3>
+							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
+						</div>	
+					</div>
+					<div class="holder-services">
+						<div class="coll">
+							<span class="people-ic icon"></span>
+							<h3>Children<span class="counter"> (726)</span></h3>
+							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
+						</div>
+					</div>
+					<div class="holder-services">
+						<div class="coll pad-c">
+							<span class="resident-ic icon"></span>
+							<h3>Residential conveyancing<span class="counter"> (4293)</span></h3>
+							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi.</p>
+						</div>	
 					</div>	
-					<div class="coll pad-r">
-						<span class="apartment-ic icon"></span>
-						<h3>Banking<span class="counter"> (2190)</span></h3>
-						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
-					</div>
-				</div>
-				<div class="row">
-					<div class="coll">
-						<span class="people-ic icon"></span>
-						<h3>Children<span class="counter"> (726)</span></h3>
-						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
-					</div>
-					<div class="coll pad-c">
-						<span class="resident-ic icon"></span>
-						<h3>Residential conveyancing<span class="counter"> (4293)</span></h3>
-						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi.</p>	
-					</div>	
-					<div class="coll pad-r">
-						<span class="crime-ic icon"></span>
-						<h3>Crime<span class="counter"> (1883)</span></h3>
-						<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
+					<div class="holder-services">
+						<div class="coll pad-r">
+							<span class="crime-ic icon"></span>
+							<h3>Crime<span class="counter"> (1883)</span></h3>
+							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>	
+						</div>
 					</div>
 				</div>
 			</div>
@@ -152,16 +174,16 @@
 				<div class="slider-wrap">
 					<div class="container">
 						<div class="areas-slider areas-slick-js">
-							  <div><a href="#">Employment <span class="counter">(182)</span></a></div>
-							  <div><a href="#">Crime <span class="counter">(154)</span></a></div>
-							  <div><a href="#">Family <span class="counter">(99)</span></a></div>
-							  <div><a href="#">Charities <span class="counter">(87)</span></a></div>
-							  <div><a href="#">Employment <span class="counter">(182)</span></a></div>
-							  <div><a href="#">Banking <span class="counter">(295)</span></a></div>
-							  <div><a href="#">Crime <span class="counter">(154)</span></a></div>
-							  <div><a href="#">Employment <span class="counter">(182)</span></a></div>
-							  <div><a href="#">Employment <span class="counter">(182)</span></a></div>
-							  <div><a href="#">Crime <span class="counter">(154)</span></a></div>
+							<div><a href="#">Employment <span class="counter">(182)</span></a></div>
+							<div><a href="#">Crime <span class="counter">(154)</span></a></div>
+							<div><a href="#">Family <span class="counter">(99)</span></a></div>
+							<div><a href="#">Charities <span class="counter">(87)</span></a></div>
+							<div><a href="#">Employment <span class="counter">(182)</span></a></div>
+							<div><a href="#">Banking <span class="counter">(295)</span></a></div>
+							<div><a href="#">Crime <span class="counter">(154)</span></a></div>
+							<div><a href="#">Employment <span class="counter">(182)</span></a></div>
+							<div><a href="#">Employment <span class="counter">(182)</span></a></div>
+							<div><a href="#">Crime <span class="counter">(154)</span></a></div>
 						</div>
 					</div>
 				</div>
@@ -171,19 +193,19 @@
 			<div class="container">
 				<h4>Legal articles, advice and help</h4>
 				<div class="row">
-					<div class="coll">
+					<div class="coll col-768">
 						<div class="text-block bg-white">
 							<h5>Criminal Injuries Compensation</h5>
 							<p>If you suffer injury as a victim of a crime involving violence then you may be eligible to apply to the Criminal Injuries Compensation Authority (CICA) for compensation. <a href="#">Read More</a></p>
 						</div>
 					</div>
-					<div class="coll">
+					<div class="coll col-768">
 						<div class="text-block bg-white">
 							<h5>Things You Should Know About Divorce Laws in the US</h5>
 							<p>If you suffer injury as a victim of a crime involving violence then you may be eligible to apply to the Criminal Injuries Compensation Authority... <a href="#">Read More</a></p>
 						</div>	
 					</div>
-					<div class="coll">
+					<div class="coll col-768">
 						<div class="text-block bg-white">
 							<h5>Criminal Injuries Compensation</h5>
 							<p>If you suffer injury as a victim of a crime involving violence then you may be eligible to apply to the Criminal Injuries Compensation Authority (CICA) for compensation. <a href="#">Read More</a></p>

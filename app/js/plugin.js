@@ -26,7 +26,26 @@ $('.areas-slick-js').slick({
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
-
+  responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+		{
+			breakpoint: 640,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+    {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+   ]
 
 });
 })(jQuery);
