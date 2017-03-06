@@ -353,6 +353,7 @@
 	padding: 0;
 }
 .jq-selectbox li {
+	text-align: center;
 	min-height: 18px;
 	padding: 5px 10px 6px;
 	-webkit-user-select: none;
@@ -370,10 +371,10 @@
   font-family: 'ProximaNova-Regular';
 }
 .jq-selectbox li:hover {
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.45);
 	text-align: center;
 	font-size: 16px;
-  color: #7e878d;
+  color: #fff;
   font-family: 'ProximaNova-Regular';
 }
 .jq-selectbox li.disabled {
